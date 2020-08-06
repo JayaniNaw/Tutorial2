@@ -21,41 +21,41 @@ public class MainActivity extends AppCompatActivity {
         Log.i("Lifecycle", "OnCreate() invoked");
 
     }
-    public void onStart() {
 
+    @Override
+    protected void onStart() {
         super.onStart();
         Log.i("Lifecycle", "OnStart() invoked");
-
     }
-    public void onReStart() {
 
+    @Override
+    protected void onRestart() {
         super.onRestart();
         Log.i("Lifecycle", "OnReStart() invoked");
-
     }
 
-    public void onResume() {
-
+    @Override
+    protected void onResume() {
         super.onResume();
         Log.i("Lifecycle", "OnResume() invoked");
     }
 
-    public void onPause() {
-
+    @Override
+    protected void onPause() {
         super.onPause();
         Log.i("Lifecycle", "OnPause() invoked");
     }
 
-    public void onStop() {
-
+    @Override
+    protected void onStop() {
         super.onStop();
         Log.i("Lifecycle", "OnStop() invoked");
     }
 
-    public void onDestroy(){
-
+    @Override
+    protected void onDestroy() {
         super.onDestroy();
         Log.i("Lifecycle","OnDestroy invoked");
-
     }
+
 }
